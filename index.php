@@ -14,7 +14,7 @@ function showCharacter($cell): string
     if ($cell === 1) {
         return "X";
     }
-    if ($cell === 1) {
+    if ($cell === 2) {
         return "O";
     }
     if ($cell === null) {
@@ -38,4 +38,13 @@ function hasAnyEmptyCell($game): bool
 
     return false;
 }
+
+function changePlayer($player) {
+    if ($player === 1) {
+        return 2;
+    } else if ($player === 2) {
+        return 1;
+    }
+}
+
 
